@@ -13,12 +13,12 @@ export class UsersDashboardComponent implements OnInit {
   users: MatTableDataSource<IUser> = new MatTableDataSource(); // Usar MatTableDataSource
 
   selectedUser: IUser = {
-    id: 1,
-    name: "Marco",
-    username: "marco1",
-    email: "marco1@gmail.com",
-    phone: "961 872 9982",
-    website: "marco1.com"
+    id: 11,
+    name: "jenry",
+    username: "holita1",
+    email: "soyamigo@gmail.com",
+    phone: "961 134234 22",
+    website: "taquito.com"
   };
 
   constructor(private _service: UserService) {}

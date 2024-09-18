@@ -1,3 +1,12 @@
+<h1> FORMULARIO DE USUARIOS</h1>
+
+<app-edit-user-form 
+    [user]="selectedUser" 
+    [disabled]="true"
+    (eventEmitter)="addUser($event)">
+</app-edit-user-form>
+
+
 <table mat-table [dataSource]="users" class="mat-elevation-z8">
     <ng-container matColumnDef="id">
         <th mat-header-cell *matHeaderCellDef> ID </th>
@@ -33,10 +42,3 @@
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
 
-<h1> FORMULARIO DE USUARIOS</h1>
-
-<app-edit-user-form 
-    [user]="selectedUser" 
-    [disabled]="true"
-    (eventEmitter)="addUser($event)">
-</app-edit-user-form>
