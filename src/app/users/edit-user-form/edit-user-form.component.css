@@ -1,0 +1,44 @@
+#edit_form {
+    max-width: 400px; /* Ancho máximo del formulario */
+    margin: 20px auto; /* Centrar el formulario */
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde del formulario */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    background-color: #ffffff; /* Fondo blanco */
+}
+
+label {
+    display: block; /* Mostrar cada etiqueta en una nueva línea */
+    margin: 10px 0 5px; /* Espaciado entre etiquetas y campos */
+    font-weight: bold; /* Negrita para las etiquetas */
+    color: #333; /* Color del texto */
+}
+
+input[type="text"] {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde suave */
+    border-radius: 4px; /* Bordes redondeados */
+    margin-bottom: 15px; /* Espaciado entre campos */
+    box-sizing: border-box; /* Incluye padding y border en el ancho */
+}
+
+input[type="text"]:disabled {
+    background-color: #f9f9f9; /* Color de fondo para campos deshabilitados */
+    color: #777; /* Color del texto para campos deshabilitados */
+}
+
+button {
+    background-color: #3f51b5; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 10px 15px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+    font-size: 16px; /* Tamaño del texto */
+}
+
+button:hover {
+    background-color: #303f9f; /* Color al pasar el mouse sobre el botón */
+}
