@@ -10,13 +10,14 @@ import { MatTableDataSource } from '@angular/material/table';
 })
 export class UsersDashboardComponent implements OnInit {
   displayedColumns: string[] = ['id', 'name', 'username', 'email', 'phone', 'website'];
+  
   users: MatTableDataSource<IUser> = new MatTableDataSource(); // Usar MatTableDataSource
 
   selectedUser: IUser = {
     id: 11,
     name: "jenry",
     username: "holita1",
-    email: "soyamigo@gmail.com",
+    email: "soypollito@gmail.com",
     phone: "961 134234 22",
     website: "taquito.com"
   };
