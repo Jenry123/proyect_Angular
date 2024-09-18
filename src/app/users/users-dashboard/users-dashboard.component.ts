@@ -10,7 +10,7 @@ import { MatTableDataSource } from '@angular/material/table';
 })
 export class UsersDashboardComponent implements OnInit {
   displayedColumns: string[] = ['id', 'name', 'username', 'email', 'phone', 'website'];
-  
+
   users: MatTableDataSource<IUser> = new MatTableDataSource(); // Usar MatTableDataSource
 
   selectedUser: IUser = {
@@ -32,6 +32,7 @@ export class UsersDashboardComponent implements OnInit {
 
   addUser(user: IUser): void {
     user.id = this.users.data.length > 0 ? Math.max(...this.users.data.map(u => u.id)) + 1 : 1; // Generar ID único
+    alert("usuario "+user.name+" ha sido agregado correctamente")
     this.users.data.push(user); // Agregar el nuevo usuario
     this.users._updateChangeSubscription(); // Actualizar el dataSource
   }
